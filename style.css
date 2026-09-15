@@ -1,0 +1,453 @@
+/* =====================================================
+   SMART CONSTRUCTION ESTIMATION SYSTEM
+   Professional Civil Engineering Web Interface
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #155eef;
+    --primary-dark: #0d47c7;
+    --orange: #f59e0b;
+    --dark: #172033;
+    --text: #344054;
+    --muted: #667085;
+    --border: #d9e1ec;
+    --background: #f5f7fb;
+    --white: #ffffff;
+    --success: #087443;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    min-height: 78px;
+    padding: 14px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(16, 24, 40, 0.06);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #eaf1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.brand h1 {
+    color: var(--dark);
+    font-size: 21px;
+    font-weight: 750;
+    line-height: 1.15;
+}
+
+.brand p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.header-tag {
+    background: #fff7e6;
+    color: #9a5b00;
+    border: 1px solid #f7d58a;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ================= MAIN ================= */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 35px auto 50px;
+}
+
+.intro {
+    margin-bottom: 24px;
+}
+
+.intro h2 {
+    color: var(--dark);
+    font-size: 29px;
+    margin-bottom: 7px;
+}
+
+.intro p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+
+/* ================= CARDS ================= */
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 14px rgba(16, 24, 40, 0.045);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.section-title > span {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    background: #edf3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.section-title h2 {
+    color: var(--dark);
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.section-title p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    color: #344054;
+    font-size: 13px;
+    font-weight: 650;
+    margin-bottom: 7px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #cfd7e3;
+    border-radius: 8px;
+    background: #fff;
+    color: #1d2939;
+    padding: 0 13px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input::placeholder {
+    color: #98a2b3;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(21, 94, 239, 0.10);
+}
+
+
+/* ================= FOUNDATION ================= */
+
+.card h3 {
+    color: var(--dark);
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ================= INFO BOX ================= */
+
+.info-box {
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #fff8e8;
+    border: 1px solid #f4d58a;
+    color: #7a4b00;
+    font-size: 12px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.action-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0;
+}
+
+.calculate-btn,
+.reset-btn,
+.report-buttons button {
+    border: none;
+    border-radius: 9px;
+    height: 46px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calculate-btn {
+    background: var(--primary);
+    color: white;
+    min-width: 210px;
+    box-shadow: 0 5px 12px rgba(21, 94, 239, 0.18);
+}
+
+.calculate-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.reset-btn {
+    background: white;
+    color: #475467;
+    border: 1px solid #cfd7e3;
+}
+
+.reset-btn:hover {
+    background: #f8fafc;
+}
+
+
+/* ================= RESULT ================= */
+
+.result-section {
+    border-top: 4px solid var(--primary);
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.result-box {
+    background: #f7f9fc;
+    border: 1px solid #e5eaf1;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.result-box span {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.result-box strong {
+    color: var(--dark);
+    font-size: 21px;
+}
+
+
+/* ================= COST SUMMARY ================= */
+
+.cost-summary {
+    border: 1px solid #e1e6ef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cost-summary h3 {
+    margin: 0;
+    padding: 15px 17px;
+    background: #f7f9fc;
+    border-bottom: 1px solid #e1e6ef;
+    font-size: 15px;
+}
+
+.cost-row {
+    min-height: 45px;
+    padding: 10px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edf0f4;
+    font-size: 13px;
+}
+
+.cost-row strong {
+    color: #1d2939;
+}
+
+.cost-row.total {
+    background: #eef4ff;
+    border-bottom: none;
+    min-height: 56px;
+}
+
+.cost-row.total span,
+.cost-row.total strong {
+    color: var(--primary-dark);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* ================= REPORT BUTTONS ================= */
+
+.report-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.report-buttons button {
+    background: var(--dark);
+    color: white;
+}
+
+.report-buttons button:hover {
+    opacity: 0.9;
+}
+
+
+/* ================= FOOTER NOTE ================= */
+
+.footer-note {
+    background: #fffdf7;
+    border: 1px solid #f1dfae;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-top: 20px;
+    color: #6b5a31;
+    font-size: 12px;
+}
+
+.footer-note p + p {
+    margin-top: 6px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #172033;
+    color: #d0d5dd;
+    text-align: center;
+    padding: 24px 15px;
+    font-size: 12px;
+}
+
+footer p + p {
+    margin-top: 4px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 12px 4%;
+    }
+
+    .brand h1 {
+        font-size: 17px;
+    }
+
+    .header-tag {
+        display: none;
+    }
+
+    .container {
+        width: 94%;
+        margin-top: 25px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .form-grid,
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .action-area,
+    .report-buttons {
+        flex-direction: column;
+    }
+
+    .calculate-btn,
+    .reset-btn,
+    .report-buttons button {
+        width: 100%;
+    }
+}

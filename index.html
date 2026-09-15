@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Construction Estimation System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="logo">🏗️</div>
+
+            <div>
+                <h1>Smart Construction</h1>
+                <p>Estimation System</p>
+            </div>
+        </div>
+
+        <div class="header-tag">
+            PWD / SOR Based
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- INTRO -->
+        <section class="intro">
+
+            <h2>Construction Cost Estimator</h2>
+
+            <p>
+                Enter your building and construction details to prepare
+                an estimated project cost.
+            </p>
+
+        </section>
+
+
+        <!-- BUILDING DETAILS -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>🏠</span>
+                <div>
+                    <h2>Building Details</h2>
+                    <p>Basic dimensions and building information</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Length (ft)</label>
+                    <input type="number" id="length" placeholder="Enter length">
+                </div>
+
+                <div class="form-group">
+                    <label>Breadth (ft)</label>
+                    <input type="number" id="breadth" placeholder="Enter breadth">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Floors</label>
+                    <input type="number" id="floors" value="1" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label>Floor Height (ft)</label>
+                    <input type="number" id="floorHeight" placeholder="e.g. 13.12">
+                </div>
+
+                <div class="form-group">
+                    <label>External Wall Thickness (ft)</label>
+                    <input type="number" id="externalWall" placeholder="e.g. 0.98">
+                </div>
+
+                <div class="form-group">
+                    <label>Internal Partition Wall Length (ft)</label>
+                    <input type="number" id="internalWallLength" placeholder="Total length">
+                </div>
+
+                <div class="form-group">
+                    <label>Internal Wall Thickness (ft)</label>
+                    <input type="number" id="internalWall" placeholder="e.g. 0.66">
+                </div>
+
+                <div class="form-group">
+                    <label>Door + Window Area (sq ft)</label>
+                    <input type="number" id="openingArea" placeholder="Total opening area">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MASONRY -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>🧱</span>
+                <div>
+                    <h2>Brickwork & Mortar</h2>
+                    <p>Wall construction details</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Mortar Ratio</label>
+
+                    <select id="mortarRatio">
+                        <option value="1:6">1 : 6</option>
+                        <option value="1:5">1 : 5</option>
+                        <option value="1:4">1 : 4</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Plaster Height (ft)</label>
+                    <input type="number" id="plasterHeight" placeholder="e.g. 15.42">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RCC -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>🏛️</span>
+                <div>
+                    <h2>RCC / Structural Details</h2>
+                    <p>Slab, columns and beam information</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Slab Thickness (ft)</label>
+                    <input type="number" id="slabThickness" placeholder="e.g. 0.39">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of RCC Columns / Floor</label>
+                    <input type="number" id="columns" value="0" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Column Length (ft)</label>
+                    <input type="number" id="columnLength" placeholder="e.g. 0.98">
+                </div>
+
+                <div class="form-group">
+                    <label>Column Breadth (ft)</label>
+                    <input type="number" id="columnBreadth" placeholder="e.g. 0.98">
+                </div>
+
+                <div class="form-group">
+                    <label>Beam Total Length / Floor (ft)</label>
+                    <input type="number" id="beamLength" placeholder="e.g. 60.70">
+                </div>
+
+                <div class="form-group">
+                    <label>Beam Width (ft)</label>
+                    <input type="number" id="beamWidth" placeholder="e.g. 0.98">
+                </div>
+
+                <div class="form-group">
+                    <label>Beam Depth (ft)</label>
+                    <input type="number" id="beamDepth" placeholder="e.g. 1.64">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOUNDATION -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>🏗️</span>
+                <div>
+                    <h2>Foundation Details</h2>
+                    <p>Select the foundation system</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group full">
+
+                    <label>Foundation Type</label>
+
+                    <select id="foundationType" onchange="showFoundationFields()">
+
+                        <option value="strip">
+                            Continuous / Strip Footing
+                        </option>
+
+                        <option value="isolated">
+                            Isolated RCC Footings
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRIP FOOTING -->
+            <div id="stripFields">
+
+                <h3>Continuous / Strip Footing</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Total Strip Footing Run (ft)</label>
+                        <input type="number" id="stripRun" placeholder="e.g. 155.50">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footing Breadth (ft)</label>
+                        <input type="number" id="stripBreadth" placeholder="e.g. 2.95">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footing Depth (ft)</label>
+                        <input type="number" id="stripDepth" placeholder="e.g. 1.97">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ISOLATED FOOTING -->
+            <div id="isolatedFields" class="hidden">
+
+                <h3>Isolated RCC Footings</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Number of Footings</label>
+                        <input type="number" id="footingCount" value="0" min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footing Length (ft)</label>
+                        <input type="number" id="footingLength">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footing Breadth (ft)</label>
+                        <input type="number" id="footingBreadth">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footing Depth (ft)</label>
+                        <input type="number" id="footingDepth">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STEEL -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>🔩</span>
+                <div>
+                    <h2>Steel Details</h2>
+                    <p>Reinforcement information</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Steel Quantity (kg)</label>
+                    <input type="number" id="steelQuantity" placeholder="From structural design">
+                </div>
+
+                <div class="form-group">
+                    <label>TMT Steel Rate (₹ / kg)</label>
+                    <input type="number" id="steelRate" value="65">
+                </div>
+
+            </div>
+
+
+            <div class="info-box">
+                ⚠️ Steel quantity should be verified through structural design.
+            </div>
+
+        </section>
+
+
+        <!-- LABOUR -->
+        <section class="card">
+
+            <div class="section-title">
+                <span>👷</span>
+                <div>
+                    <h2>Labour & Site Details</h2>
+                    <p>Manpower and construction duration</p>
+                </div>
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Construction Days</label>
+                    <input type="number" id="constructionDays" placeholder="e.g. 100">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Masons</label>
+                    <input type="number" id="masons" placeholder="e.g. 5">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Mazdoors</label>
+                    <input type="number" id="mazdoors" placeholder="e.g. 9">
+                </div>
+
+                <div class="form-group">
+                    <label>Electrician Work-Days</label>
+                    <input type="number" id="electricianDays" placeholder="e.g. 18">
+                </div>
+
+                <div class="form-group">
+                    <label>Plumber Work-Days</label>
+                    <input type="number" id="plumberDays" placeholder="e.g. 14">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Carpenters</label>
+                    <input type="number" id="carpenters" placeholder="e.g. 2">
+                </div>
+
+                <div class="form-group">
+                    <label>Carpenter Working Days</label>
+                    <input type="number" id="carpenterDays" placeholder="e.g. 30">
+                </div>
+
+                <div class="form-group">
+                    <label>Security Personnel</label>
+                    <input type="number" id="security" placeholder="e.g. 1">
+                </div>
+
+                <div class="form-group">
+                    <label>Security Working Days</label>
+                    <input type="number" id="securityDays" placeholder="e.g. 120">
+                </div>
+
+                <div class="form-group">
+                    <label>Security Rate (₹ / day)</label>
+                    <input type="number" id="securityRate" placeholder="Enter rate">
+                </div>
+
+                <div class="form-group">
+                    <label>Water Charges (%)</label>
+                    <input type="number" id="waterCharges" value="1">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTION BUTTON -->
+        <section class="action-area">
+
+            <button class="calculate-btn" onclick="calculateEstimate()">
+                📊 Calculate Estimate
+            </button>
+
+            <button class="reset-btn" onclick="resetForm()">
+                Reset
+            </button>
+
+        </section>
+
+
+        <!-- RESULT -->
+        <section id="resultSection" class="card result-section hidden">
+
+            <div class="section-title">
+                <span>💰</span>
+
+                <div>
+                    <h2>Estimation Result</h2>
+                    <p>Estimated project cost summary</p>
+                </div>
+            </div>
+
+
+            <div class="result-grid">
+
+                <div class="result-box">
+                    <span>Building Area</span>
+                    <strong id="resultArea">0 sq.ft</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Estimated Cost</span>
+                    <strong id="resultCost">₹0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="cost-summary">
+
+                <h3>Cost Summary</h3>
+
+                <div class="cost-row">
+                    <span>Foundation</span>
+                    <strong id="foundationCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>RCC Work</span>
+                    <strong id="rccCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Brickwork</span>
+                    <strong id="brickCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Plaster</span>
+                    <strong id="plasterCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Flooring</span>
+                    <strong id="floorCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Painting</span>
+                    <strong id="paintingCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Steel</span>
+                    <strong id="steelCost">₹0</strong>
+                </div>
+
+                <div class="cost-row">
+                    <span>Labour</span>
+                    <strong id="labourCost">₹0</strong>
+                </div>
+
+                <div class="cost-row total">
+                    <span>GRAND TOTAL</span>
+                    <strong id="grandTotal">₹0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="report-buttons">
+
+                <button onclick="generateReport()">
+                    📄 Generate Report
+                </button>
+
+                <button onclick="window.print()">
+                    🖨️ Print / Save PDF
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER NOTE -->
+        <div class="footer-note">
+
+            <p>
+                <strong>Note:</strong>
+                This is an estimated construction cost based on entered
+                dimensions and applicable PWD/SOR rates.
+            </p>
+
+            <p>
+                Material quantities are approximate. Steel quantity must
+                be verified through structural design.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Smart Construction Estimation System
+        </p>
+
+        <p>
+            Civil Engineering Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
