@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sakshamtiwari18.github.io/smart-construction-estimation-system/sitemap.xml
