@@ -2,39 +2,26 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
     <title>Smart Construction Estimation System</title>
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <!-- SEO -->
     <meta name="description"
-        content="Smart Construction Estimation System for estimating building construction cost, material quantities, labour and structural requirements.">
+        content="Smart Construction Estimation System for calculating construction cost, material quantities and project estimates based on PWD and SOR rates.">
 
     <meta name="keywords"
-        content="Smart Construction Estimation System, construction cost estimator, building cost calculator, civil engineering, construction estimation">
+        content="Smart Construction Estimation System, Construction Cost Calculator, Construction Estimator, Civil Engineering, PWD SOR, Building Cost Calculator">
 
-    <meta name="author" content="Saksham Tiwari">
-
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0b3d91">
-
-    <!-- Canonical URL -->
-    <link rel="canonical"
-        href="https://sakshamtiwari18.github.io/smart-construction-estimation-system/">
+    <meta name="author" content="Smart Construction Estimation System">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
@@ -44,7 +31,9 @@
 
         <div class="brand">
 
-            <div class="logo">🏗️</div>
+            <div class="logo">
+                🏗️
+            </div>
 
             <div>
                 <h1>Smart Construction</h1>
@@ -65,7 +54,7 @@
     <main class="container">
 
 
-        <!-- INTRO -->
+        <!-- ================= INTRO ================= -->
 
         <section class="intro">
 
@@ -79,7 +68,6 @@
         </section>
 
 
-
         <!-- ================= BUILDING DETAILS ================= -->
 
         <section class="card">
@@ -89,20 +77,14 @@
                 <span>🏠</span>
 
                 <div>
-
                     <h2>Building Details</h2>
-
-                    <p>
-                        Basic dimensions and building information
-                    </p>
-
+                    <p>Basic dimensions and building information</p>
                 </div>
 
             </div>
 
 
             <div class="form-grid">
-
 
                 <div class="form-group">
 
@@ -208,14 +190,12 @@
 
                 </div>
 
-
             </div>
 
         </section>
 
 
-
-        <!-- ================= MASONRY ================= -->
+        <!-- ================= BRICKWORK & MORTAR ================= -->
 
         <section class="card">
 
@@ -224,13 +204,8 @@
                 <span>🧱</span>
 
                 <div>
-
                     <h2>Brickwork & Mortar</h2>
-
-                    <p>
-                        Wall construction details
-                    </p>
-
+                    <p>Wall construction details</p>
                 </div>
 
             </div>
@@ -238,24 +213,15 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
                     <label>Mortar Ratio</label>
 
                     <select id="mortarRatio">
 
-                        <option value="1:6">
-                            1 : 6
-                        </option>
-
-                        <option value="1:5">
-                            1 : 5
-                        </option>
-
-                        <option value="1:4">
-                            1 : 4
-                        </option>
+                        <option value="1:6">1 : 6</option>
+                        <option value="1:5">1 : 5</option>
+                        <option value="1:4">1 : 4</option>
 
                     </select>
 
@@ -274,14 +240,12 @@
 
                 </div>
 
-
             </div>
 
         </section>
 
 
-
-        <!-- ================= RCC / STRUCTURAL ================= -->
+        <!-- ================= RCC DETAILS ================= -->
 
         <section class="card">
 
@@ -290,20 +254,14 @@
                 <span>🏛️</span>
 
                 <div>
-
                     <h2>RCC / Structural Details</h2>
-
-                    <p>
-                        Slab, columns and beam information
-                    </p>
-
+                    <p>Slab, columns and beam information</p>
                 </div>
 
             </div>
 
 
             <div class="form-grid">
-
 
                 <div class="form-group">
 
@@ -396,11 +354,9 @@
 
                 </div>
 
-
             </div>
 
         </section>
-
 
 
         <!-- ================= FOUNDATION ================= -->
@@ -412,13 +368,8 @@
                 <span>🏗️</span>
 
                 <div>
-
                     <h2>Foundation Details</h2>
-
-                    <p>
-                        Select the foundation system
-                    </p>
-
+                    <p>Select the foundation system</p>
                 </div>
 
             </div>
@@ -450,24 +401,17 @@
             </div>
 
 
-
             <!-- STRIP FOOTING -->
 
             <div id="stripFields">
 
-                <h3>
-                    Continuous / Strip Footing
-                </h3>
-
+                <h3>Continuous / Strip Footing</h3>
 
                 <div class="form-grid">
 
-
                     <div class="form-group">
 
-                        <label>
-                            Total Strip Footing Run (ft)
-                        </label>
+                        <label>Total Strip Footing Run (ft)</label>
 
                         <input
                             type="number"
@@ -480,9 +424,7 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Breadth (ft)
-                        </label>
+                        <label>Footing Breadth (ft)</label>
 
                         <input
                             type="number"
@@ -495,9 +437,7 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Depth (ft)
-                        </label>
+                        <label>Footing Depth (ft)</label>
 
                         <input
                             type="number"
@@ -507,33 +447,22 @@
 
                     </div>
 
-
                 </div>
 
             </div>
 
 
-
             <!-- ISOLATED FOOTING -->
 
-            <div
-                id="isolatedFields"
-                class="hidden"
-            >
+            <div id="isolatedFields" class="hidden">
 
-                <h3>
-                    Isolated RCC Footings
-                </h3>
-
+                <h3>Isolated RCC Footings</h3>
 
                 <div class="form-grid">
 
-
                     <div class="form-group">
 
-                        <label>
-                            Number of Footings
-                        </label>
+                        <label>Number of Footings</label>
 
                         <input
                             type="number"
@@ -547,9 +476,7 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Length (ft)
-                        </label>
+                        <label>Footing Length (ft)</label>
 
                         <input
                             type="number"
@@ -561,9 +488,7 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Breadth (ft)
-                        </label>
+                        <label>Footing Breadth (ft)</label>
 
                         <input
                             type="number"
@@ -575,9 +500,7 @@
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Depth (ft)
-                        </label>
+                        <label>Footing Depth (ft)</label>
 
                         <input
                             type="number"
@@ -586,13 +509,11 @@
 
                     </div>
 
-
                 </div>
 
             </div>
 
         </section>
-
 
 
         <!-- ================= STEEL ================= -->
@@ -604,13 +525,8 @@
                 <span>🔩</span>
 
                 <div>
-
                     <h2>Steel Details</h2>
-
-                    <p>
-                        Reinforcement information
-                    </p>
-
+                    <p>Reinforcement information</p>
                 </div>
 
             </div>
@@ -618,12 +534,9 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Steel Quantity (kg)
-                    </label>
+                    <label>Steel Quantity (kg)</label>
 
                     <input
                         type="number"
@@ -636,9 +549,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        TMT Steel Rate (₹ / kg)
-                    </label>
+                    <label>TMT Steel Rate (₹ / kg)</label>
 
                     <input
                         type="number"
@@ -648,19 +559,16 @@
 
                 </div>
 
-
             </div>
 
 
             <div class="info-box">
 
-                ⚠️ Steel quantity should be verified through
-                structural design.
+                ⚠️ Steel quantity should be verified through structural design.
 
             </div>
 
         </section>
-
 
 
         <!-- ================= LABOUR ================= -->
@@ -672,13 +580,8 @@
                 <span>👷</span>
 
                 <div>
-
                     <h2>Labour & Site Details</h2>
-
-                    <p>
-                        Manpower and construction duration
-                    </p>
-
+                    <p>Manpower and construction duration</p>
                 </div>
 
             </div>
@@ -686,12 +589,9 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Construction Days
-                    </label>
+                    <label>Construction Days</label>
 
                     <input
                         type="number"
@@ -704,9 +604,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Masons
-                    </label>
+                    <label>Number of Masons</label>
 
                     <input
                         type="number"
@@ -719,9 +617,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Mazdoors
-                    </label>
+                    <label>Number of Mazdoors</label>
 
                     <input
                         type="number"
@@ -734,9 +630,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Electrician Work-Days
-                    </label>
+                    <label>Electrician Work-Days</label>
 
                     <input
                         type="number"
@@ -749,9 +643,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Plumber Work-Days
-                    </label>
+                    <label>Plumber Work-Days</label>
 
                     <input
                         type="number"
@@ -764,9 +656,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Carpenters
-                    </label>
+                    <label>Number of Carpenters</label>
 
                     <input
                         type="number"
@@ -779,9 +669,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Carpenter Working Days
-                    </label>
+                    <label>Carpenter Working Days</label>
 
                     <input
                         type="number"
@@ -794,9 +682,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Security Personnel
-                    </label>
+                    <label>Security Personnel</label>
 
                     <input
                         type="number"
@@ -809,9 +695,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Security Working Days
-                    </label>
+                    <label>Security Working Days</label>
 
                     <input
                         type="number"
@@ -824,9 +708,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Security Rate (₹ / day)
-                    </label>
+                    <label>Security Rate (₹ / day)</label>
 
                     <input
                         type="number"
@@ -839,9 +721,7 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Water Charges (%)
-                    </label>
+                    <label>Water Charges (%)</label>
 
                     <input
                         type="number"
@@ -851,11 +731,9 @@
 
                 </div>
 
-
             </div>
 
         </section>
-
 
 
         <!-- ================= ACTION BUTTONS ================= -->
@@ -880,7 +758,6 @@
         </section>
 
 
-
         <!-- ================= RESULT ================= -->
 
         <section
@@ -888,35 +765,23 @@
             class="card result-section hidden"
         >
 
-
             <div class="section-title">
 
                 <span>💰</span>
 
                 <div>
-
-                    <h2>
-                        Estimation Result
-                    </h2>
-
-                    <p>
-                        Estimated project cost summary
-                    </p>
-
+                    <h2>Estimation Result</h2>
+                    <p>Estimated project cost summary</p>
                 </div>
 
             </div>
 
 
-
             <div class="result-grid">
-
 
                 <div class="result-box">
 
-                    <span>
-                        Building Area
-                    </span>
+                    <span>Building Area</span>
 
                     <strong id="resultArea">
                         0 sq.ft
@@ -927,9 +792,7 @@
 
                 <div class="result-box">
 
-                    <span>
-                        Estimated Cost
-                    </span>
+                    <span>Estimated Cost</span>
 
                     <strong id="resultCost">
                         ₹0
@@ -937,25 +800,19 @@
 
                 </div>
 
-
             </div>
-
 
 
             <!-- COST SUMMARY -->
 
             <div class="cost-summary">
 
-                <h3>
-                    Cost Summary
-                </h3>
+                <h3>Cost Summary</h3>
 
 
                 <div class="cost-row">
 
-                    <span>
-                        Foundation
-                    </span>
+                    <span>Foundation</span>
 
                     <strong id="foundationCost">
                         ₹0
@@ -966,9 +823,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        RCC Work
-                    </span>
+                    <span>RCC Work</span>
 
                     <strong id="rccCost">
                         ₹0
@@ -979,9 +834,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Brickwork
-                    </span>
+                    <span>Brickwork</span>
 
                     <strong id="brickCost">
                         ₹0
@@ -992,9 +845,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Plaster
-                    </span>
+                    <span>Plaster</span>
 
                     <strong id="plasterCost">
                         ₹0
@@ -1005,9 +856,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Flooring
-                    </span>
+                    <span>Flooring</span>
 
                     <strong id="floorCost">
                         ₹0
@@ -1018,9 +867,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Painting
-                    </span>
+                    <span>Painting</span>
 
                     <strong id="paintingCost">
                         ₹0
@@ -1031,9 +878,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Steel
-                    </span>
+                    <span>Steel</span>
 
                     <strong id="steelCost">
                         ₹0
@@ -1044,9 +889,7 @@
 
                 <div class="cost-row">
 
-                    <span>
-                        Labour
-                    </span>
+                    <span>Labour</span>
 
                     <strong id="labourCost">
                         ₹0
@@ -1057,9 +900,7 @@
 
                 <div class="cost-row total">
 
-                    <span>
-                        GRAND TOTAL
-                    </span>
+                    <span>GRAND TOTAL</span>
 
                     <strong id="grandTotal">
                         ₹0
@@ -1067,9 +908,7 @@
 
                 </div>
 
-
             </div>
-
 
 
             <!-- REPORT BUTTONS -->
@@ -1087,9 +926,7 @@
 
             </div>
 
-
         </section>
-
 
 
         <!-- ================= FOOTER NOTE ================= -->
@@ -1100,8 +937,8 @@
 
                 <strong>Note:</strong>
 
-                This is an estimated construction cost based on
-                entered dimensions and applicable PWD/SOR rates.
+                This is an estimated construction cost based on entered
+                dimensions and applicable PWD/SOR rates.
 
             </p>
 
@@ -1115,9 +952,7 @@
 
         </div>
 
-
     </main>
-
 
 
     <!-- ================= FOOTER ================= -->
@@ -1135,11 +970,9 @@
     </footer>
 
 
-
     <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
-
 
 </body>
 
