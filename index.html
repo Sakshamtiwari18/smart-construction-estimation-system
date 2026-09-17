@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Smart Construction Estimation System</title>
 
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="favicon.png?v=2">
+    <link rel="apple-touch-icon" href="favicon.png?v=2">
 
     <!-- SEO -->
     <meta name="description"
@@ -19,13 +23,21 @@
 
     <meta name="author" content="Smart Construction Estimation System">
 
+    <meta name="theme-color" content="#0b3d91">
+
+    <!-- Canonical URL -->
+    <link rel="canonical"
+        href="https://sakshamtiwari18.github.io/smart-construction-estimation-system/">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- HEADER -->
 
     <header class="header">
 
@@ -49,12 +61,12 @@
     </header>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+    <!-- MAIN -->
 
     <main class="container">
 
 
-        <!-- ================= INTRO ================= -->
+        <!-- INTRO -->
 
         <section class="intro">
 
@@ -68,7 +80,7 @@
         </section>
 
 
-        <!-- ================= BUILDING DETAILS ================= -->
+        <!-- BUILDING DETAILS -->
 
         <section class="card">
 
@@ -93,8 +105,7 @@
                     <input
                         type="number"
                         id="length"
-                        placeholder="Enter length"
-                    >
+                        placeholder="Enter length">
 
                 </div>
 
@@ -106,8 +117,7 @@
                     <input
                         type="number"
                         id="breadth"
-                        placeholder="Enter breadth"
-                    >
+                        placeholder="Enter breadth">
 
                 </div>
 
@@ -120,8 +130,7 @@
                         type="number"
                         id="floors"
                         value="1"
-                        min="1"
-                    >
+                        min="1">
 
                 </div>
 
@@ -133,8 +142,7 @@
                     <input
                         type="number"
                         id="floorHeight"
-                        placeholder="e.g. 13.12"
-                    >
+                        placeholder="e.g. 13.12">
 
                 </div>
 
@@ -146,8 +154,7 @@
                     <input
                         type="number"
                         id="externalWall"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
@@ -159,8 +166,7 @@
                     <input
                         type="number"
                         id="internalWallLength"
-                        placeholder="Total length"
-                    >
+                        placeholder="Total length">
 
                 </div>
 
@@ -172,8 +178,7 @@
                     <input
                         type="number"
                         id="internalWall"
-                        placeholder="e.g. 0.66"
-                    >
+                        placeholder="e.g. 0.66">
 
                 </div>
 
@@ -185,8 +190,7 @@
                     <input
                         type="number"
                         id="openingArea"
-                        placeholder="Total opening area"
-                    >
+                        placeholder="Total opening area">
 
                 </div>
 
@@ -195,7 +199,7 @@
         </section>
 
 
-        <!-- ================= BRICKWORK & MORTAR ================= -->
+        <!-- BRICKWORK -->
 
         <section class="card">
 
@@ -219,9 +223,17 @@
 
                     <select id="mortarRatio">
 
-                        <option value="1:6">1 : 6</option>
-                        <option value="1:5">1 : 5</option>
-                        <option value="1:4">1 : 4</option>
+                        <option value="1:6">
+                            1 : 6
+                        </option>
+
+                        <option value="1:5">
+                            1 : 5
+                        </option>
+
+                        <option value="1:4">
+                            1 : 4
+                        </option>
 
                     </select>
 
@@ -235,8 +247,7 @@
                     <input
                         type="number"
                         id="plasterHeight"
-                        placeholder="e.g. 15.42"
-                    >
+                        placeholder="e.g. 15.42">
 
                 </div>
 
@@ -245,7 +256,7 @@
         </section>
 
 
-        <!-- ================= RCC DETAILS ================= -->
+        <!-- RCC -->
 
         <section class="card">
 
@@ -270,8 +281,7 @@
                     <input
                         type="number"
                         id="slabThickness"
-                        placeholder="e.g. 0.39"
-                    >
+                        placeholder="e.g. 0.39">
 
                 </div>
 
@@ -284,8 +294,7 @@
                         type="number"
                         id="columns"
                         value="0"
-                        min="0"
-                    >
+                        min="0">
 
                 </div>
 
@@ -297,8 +306,7 @@
                     <input
                         type="number"
                         id="columnLength"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
@@ -310,8 +318,7 @@
                     <input
                         type="number"
                         id="columnBreadth"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
@@ -323,8 +330,7 @@
                     <input
                         type="number"
                         id="beamLength"
-                        placeholder="e.g. 60.70"
-                    >
+                        placeholder="e.g. 60.70">
 
                 </div>
 
@@ -336,8 +342,7 @@
                     <input
                         type="number"
                         id="beamWidth"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
@@ -349,8 +354,7 @@
                     <input
                         type="number"
                         id="beamDepth"
-                        placeholder="e.g. 1.64"
-                    >
+                        placeholder="e.g. 1.64">
 
                 </div>
 
@@ -359,7 +363,7 @@
         </section>
 
 
-        <!-- ================= FOUNDATION ================= -->
+        <!-- FOUNDATION -->
 
         <section class="card">
 
@@ -383,8 +387,7 @@
 
                     <select
                         id="foundationType"
-                        onchange="showFoundationFields()"
-                    >
+                        onchange="showFoundationFields()">
 
                         <option value="strip">
                             Continuous / Strip Footing
@@ -405,45 +408,51 @@
 
             <div id="stripFields">
 
-                <h3>Continuous / Strip Footing</h3>
+                <h3>
+                    Continuous / Strip Footing
+                </h3>
+
 
                 <div class="form-grid">
 
                     <div class="form-group">
 
-                        <label>Total Strip Footing Run (ft)</label>
+                        <label>
+                            Total Strip Footing Run (ft)
+                        </label>
 
                         <input
                             type="number"
                             id="stripRun"
-                            placeholder="e.g. 155.50"
-                        >
+                            placeholder="e.g. 155.50">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Footing Breadth (ft)</label>
+                        <label>
+                            Footing Breadth (ft)
+                        </label>
 
                         <input
                             type="number"
                             id="stripBreadth"
-                            placeholder="e.g. 2.95"
-                        >
+                            placeholder="e.g. 2.95">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Footing Depth (ft)</label>
+                        <label>
+                            Footing Depth (ft)
+                        </label>
 
                         <input
                             type="number"
                             id="stripDepth"
-                            placeholder="e.g. 1.97"
-                        >
+                            placeholder="e.g. 1.97">
 
                     </div>
 
@@ -454,58 +463,67 @@
 
             <!-- ISOLATED FOOTING -->
 
-            <div id="isolatedFields" class="hidden">
+            <div
+                id="isolatedFields"
+                class="hidden">
 
-                <h3>Isolated RCC Footings</h3>
+                <h3>
+                    Isolated RCC Footings
+                </h3>
+
 
                 <div class="form-grid">
 
                     <div class="form-group">
 
-                        <label>Number of Footings</label>
+                        <label>
+                            Number of Footings
+                        </label>
 
                         <input
                             type="number"
                             id="footingCount"
                             value="0"
-                            min="0"
-                        >
+                            min="0">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Footing Length (ft)</label>
+                        <label>
+                            Footing Length (ft)
+                        </label>
 
                         <input
                             type="number"
-                            id="footingLength"
-                        >
+                            id="footingLength">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Footing Breadth (ft)</label>
+                        <label>
+                            Footing Breadth (ft)
+                        </label>
 
                         <input
                             type="number"
-                            id="footingBreadth"
-                        >
+                            id="footingBreadth">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Footing Depth (ft)</label>
+                        <label>
+                            Footing Depth (ft)
+                        </label>
 
                         <input
                             type="number"
-                            id="footingDepth"
-                        >
+                            id="footingDepth">
 
                     </div>
 
@@ -516,7 +534,7 @@
         </section>
 
 
-        <!-- ================= STEEL ================= -->
+        <!-- STEEL -->
 
         <section class="card">
 
@@ -536,26 +554,28 @@
 
                 <div class="form-group">
 
-                    <label>Steel Quantity (kg)</label>
+                    <label>
+                        Steel Quantity (kg)
+                    </label>
 
                     <input
                         type="number"
                         id="steelQuantity"
-                        placeholder="From structural design"
-                    >
+                        placeholder="From structural design">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>TMT Steel Rate (₹ / kg)</label>
+                    <label>
+                        TMT Steel Rate (₹ / kg)
+                    </label>
 
                     <input
                         type="number"
                         id="steelRate"
-                        value="65"
-                    >
+                        value="65">
 
                 </div>
 
@@ -564,14 +584,15 @@
 
             <div class="info-box">
 
-                ⚠️ Steel quantity should be verified through structural design.
+                ⚠️ Steel quantity should be verified through
+                structural design.
 
             </div>
 
         </section>
 
 
-        <!-- ================= LABOUR ================= -->
+        <!-- LABOUR -->
 
         <section class="card">
 
@@ -589,145 +610,157 @@
 
             <div class="form-grid">
 
+
                 <div class="form-group">
 
-                    <label>Construction Days</label>
+                    <label>
+                        Construction Days
+                    </label>
 
                     <input
                         type="number"
                         id="constructionDays"
-                        placeholder="e.g. 100"
-                    >
+                        placeholder="e.g. 100">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Number of Masons</label>
+                    <label>
+                        Number of Masons
+                    </label>
 
                     <input
                         type="number"
                         id="masons"
-                        placeholder="e.g. 5"
-                    >
+                        placeholder="e.g. 5">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Number of Mazdoors</label>
+                    <label>
+                        Number of Mazdoors
+                    </label>
 
                     <input
                         type="number"
                         id="mazdoors"
-                        placeholder="e.g. 9"
-                    >
+                        placeholder="e.g. 9">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Electrician Work-Days</label>
+                    <label>
+                        Electrician Work-Days
+                    </label>
 
                     <input
                         type="number"
                         id="electricianDays"
-                        placeholder="e.g. 18"
-                    >
+                        placeholder="e.g. 18">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Plumber Work-Days</label>
+                    <label>
+                        Plumber Work-Days
+                    </label>
 
                     <input
                         type="number"
                         id="plumberDays"
-                        placeholder="e.g. 14"
-                    >
+                        placeholder="e.g. 14">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Number of Carpenters</label>
+                    <label>
+                        Number of Carpenters
+                    </label>
 
                     <input
                         type="number"
                         id="carpenters"
-                        placeholder="e.g. 2"
-                    >
+                        placeholder="e.g. 2">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Carpenter Working Days</label>
+                    <label>
+                        Carpenter Working Days
+                    </label>
 
                     <input
                         type="number"
                         id="carpenterDays"
-                        placeholder="e.g. 30"
-                    >
+                        placeholder="e.g. 30">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Security Personnel</label>
+                    <label>
+                        Security Personnel
+                    </label>
 
                     <input
                         type="number"
                         id="security"
-                        placeholder="e.g. 1"
-                    >
+                        placeholder="e.g. 1">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Security Working Days</label>
+                    <label>
+                        Security Working Days
+                    </label>
 
                     <input
                         type="number"
                         id="securityDays"
-                        placeholder="e.g. 120"
-                    >
+                        placeholder="e.g. 120">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Security Rate (₹ / day)</label>
+                    <label>
+                        Security Rate (₹ / day)
+                    </label>
 
                     <input
                         type="number"
                         id="securityRate"
-                        placeholder="Enter rate"
-                    >
+                        placeholder="Enter rate">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Water Charges (%)</label>
+                    <label>
+                        Water Charges (%)
+                    </label>
 
                     <input
                         type="number"
                         id="waterCharges"
-                        value="1"
-                    >
+                        value="1">
 
                 </div>
 
@@ -736,34 +769,36 @@
         </section>
 
 
-        <!-- ================= ACTION BUTTONS ================= -->
+        <!-- ACTION BUTTONS -->
 
         <section class="action-area">
 
             <button
                 class="calculate-btn"
-                onclick="calculateEstimate()"
-            >
+                onclick="calculateEstimate()">
+
                 📊 Calculate Estimate
+
             </button>
 
 
             <button
                 class="reset-btn"
-                onclick="resetForm()"
-            >
+                onclick="resetForm()">
+
                 Reset
+
             </button>
 
         </section>
 
 
-        <!-- ================= RESULT ================= -->
+        <!-- RESULT -->
 
         <section
             id="resultSection"
-            class="card result-section hidden"
-        >
+            class="card result-section hidden">
+
 
             <div class="section-title">
 
@@ -779,9 +814,12 @@
 
             <div class="result-grid">
 
+
                 <div class="result-box">
 
-                    <span>Building Area</span>
+                    <span>
+                        Building Area
+                    </span>
 
                     <strong id="resultArea">
                         0 sq.ft
@@ -792,7 +830,9 @@
 
                 <div class="result-box">
 
-                    <span>Estimated Cost</span>
+                    <span>
+                        Estimated Cost
+                    </span>
 
                     <strong id="resultCost">
                         ₹0
@@ -807,12 +847,16 @@
 
             <div class="cost-summary">
 
-                <h3>Cost Summary</h3>
+                <h3>
+                    Cost Summary
+                </h3>
 
 
                 <div class="cost-row">
 
-                    <span>Foundation</span>
+                    <span>
+                        Foundation
+                    </span>
 
                     <strong id="foundationCost">
                         ₹0
@@ -823,7 +867,9 @@
 
                 <div class="cost-row">
 
-                    <span>RCC Work</span>
+                    <span>
+                        RCC Work
+                    </span>
 
                     <strong id="rccCost">
                         ₹0
@@ -834,7 +880,9 @@
 
                 <div class="cost-row">
 
-                    <span>Brickwork</span>
+                    <span>
+                        Brickwork
+                    </span>
 
                     <strong id="brickCost">
                         ₹0
@@ -845,7 +893,9 @@
 
                 <div class="cost-row">
 
-                    <span>Plaster</span>
+                    <span>
+                        Plaster
+                    </span>
 
                     <strong id="plasterCost">
                         ₹0
@@ -856,7 +906,9 @@
 
                 <div class="cost-row">
 
-                    <span>Flooring</span>
+                    <span>
+                        Flooring
+                    </span>
 
                     <strong id="floorCost">
                         ₹0
@@ -867,7 +919,9 @@
 
                 <div class="cost-row">
 
-                    <span>Painting</span>
+                    <span>
+                        Painting
+                    </span>
 
                     <strong id="paintingCost">
                         ₹0
@@ -878,7 +932,9 @@
 
                 <div class="cost-row">
 
-                    <span>Steel</span>
+                    <span>
+                        Steel
+                    </span>
 
                     <strong id="steelCost">
                         ₹0
@@ -889,7 +945,9 @@
 
                 <div class="cost-row">
 
-                    <span>Labour</span>
+                    <span>
+                        Labour
+                    </span>
 
                     <strong id="labourCost">
                         ₹0
@@ -900,7 +958,9 @@
 
                 <div class="cost-row total">
 
-                    <span>GRAND TOTAL</span>
+                    <span>
+                        GRAND TOTAL
+                    </span>
 
                     <strong id="grandTotal">
                         ₹0
@@ -929,7 +989,7 @@
         </section>
 
 
-        <!-- ================= FOOTER NOTE ================= -->
+        <!-- FOOTER NOTE -->
 
         <div class="footer-note">
 
@@ -937,8 +997,8 @@
 
                 <strong>Note:</strong>
 
-                This is an estimated construction cost based on entered
-                dimensions and applicable PWD/SOR rates.
+                This is an estimated construction cost based on
+                entered dimensions and applicable PWD/SOR rates.
 
             </p>
 
@@ -955,7 +1015,7 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -970,7 +1030,7 @@
     </footer>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
