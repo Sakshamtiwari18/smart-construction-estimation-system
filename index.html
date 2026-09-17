@@ -1,104 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO TITLE -->
-    <title>
-        Smart Construction Estimation System | Saksham Tiwari
-    </title>
+    <title>Smart Construction Estimation System | Construction Cost Estimator</title>
 
-    <!-- SEO DESCRIPTION -->
-    <meta
-        name="description"
-        content="Smart Construction Estimation System by Saksham Tiwari. A Civil Engineering project for construction cost estimation, material estimation, foundation, RCC, brickwork, plaster, steel and labour cost calculation."
-    >
+    <meta name="description"
+        content="Smart Construction Estimation System for estimating building construction cost, material quantities, labour cost and project expenses based on construction details and PWD/SOR rates.">
 
-    <!-- KEYWORDS -->
-    <meta
-        name="keywords"
-        content="Smart Construction Estimation System, Construction Cost Estimator, Construction Estimation, Civil Engineering Project, Building Cost Calculator, Material Estimation, PWD SOR, Saksham Tiwari"
-    >
+    <meta name="keywords"
+        content="Smart Construction Estimation System, construction cost estimator, building cost estimator, construction estimation, PWD SOR, civil engineering project">
 
-    <!-- AUTHOR -->
-    <meta
-        name="author"
-        content="Saksham Tiwari"
-    >
+    <meta name="robots" content="index, follow">
 
-    <!-- SEARCH ENGINE -->
-    <meta
-        name="robots"
-        content="index, follow"
-    >
+    <link rel="canonical"
+        href="https://sakshamtiwari18.github.io/smart-construction-estimation-system/">
 
-    <!-- CANONICAL URL -->
-    <link
-        rel="canonical"
-        href="https://sakshamtiwari18.github.io/smart-construction-estimation-system/"
-    >
-
-    <!-- OPEN GRAPH -->
-    <meta
-        property="og:title"
-        content="Smart Construction Estimation System | Saksham Tiwari"
-    >
-
-    <meta
-        property="og:description"
-        content="A Civil Engineering construction cost and material estimation system developed by Saksham Tiwari."
-    >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://sakshamtiwari18.github.io/smart-construction-estimation-system/"
-    >
-
-    <!-- TWITTER CARD -->
-    <meta
-        name="twitter:card"
-        content="summary"
-    >
-
-    <meta
-        name="twitter:title"
-        content="Smart Construction Estimation System"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Construction cost and material estimation system by Saksham Tiwari."
-    >
-
-    <!-- STRUCTURED DATA FOR GOOGLE -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Smart Construction Estimation System",
-        "alternateName": "Construction Cost Estimator",
-        "description": "Smart Construction Estimation System is a Civil Engineering project developed by Saksham Tiwari for estimating construction costs and materials.",
-        "url": "https://sakshamtiwari18.github.io/smart-construction-estimation-system/",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "author": {
-            "@type": "Person",
-            "name": "Saksham Tiwari"
-        }
-    }
-    </script>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 
@@ -114,19 +35,11 @@
             </div>
 
             <div>
-
-                <h1>
-                    Smart Construction
-                </h1>
-
-                <p>
-                    Estimation System
-                </p>
-
+                <h1>Smart Construction</h1>
+                <p>Estimation System</p>
             </div>
 
         </div>
-
 
         <div class="header-tag">
             PWD / SOR Based
@@ -142,21 +55,15 @@
         <!-- INTRO -->
         <section class="intro">
 
-            <h2>
-                Smart Construction Estimation System
-            </h2>
-
-            <p>
-                Construction Cost Estimator for Civil Engineering Projects
-            </p>
+            <h2>Construction Cost Estimator</h2>
 
             <p>
                 Enter your building and construction details to prepare
-                an estimated project cost, material requirement and
-                construction cost summary.
+                an estimated project cost.
             </p>
 
         </section>
+
 
 
         <!-- BUILDING DETAILS -->
@@ -164,20 +71,11 @@
 
             <div class="section-title">
 
-                <span>
-                    🏠
-                </span>
+                <span>🏠</span>
 
                 <div>
-
-                    <h2>
-                        Building Details
-                    </h2>
-
-                    <p>
-                        Basic dimensions and building information
-                    </p>
-
+                    <h2>Building Details</h2>
+                    <p>Basic dimensions and building information</p>
                 </div>
 
             </div>
@@ -185,125 +83,51 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
-
-                    <label>
-                        Length (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="length"
-                        placeholder="Enter length"
-                    >
-
+                    <label>Length (ft)</label>
+                    <input type="number" id="length" placeholder="Enter length">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Breadth (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="breadth"
-                        placeholder="Enter breadth"
-                    >
-
+                    <label>Breadth (ft)</label>
+                    <input type="number" id="breadth" placeholder="Enter breadth">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Number of Floors
-                    </label>
-
-                    <input
-                        type="number"
-                        id="floors"
-                        value="1"
-                        min="1"
-                    >
-
+                    <label>Number of Floors</label>
+                    <input type="number" id="floors" value="1" min="1">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Floor Height (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="floorHeight"
-                        placeholder="e.g. 13.12"
-                    >
-
+                    <label>Floor Height (ft)</label>
+                    <input type="number" id="floorHeight" placeholder="e.g. 13.12">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        External Wall Thickness (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="externalWall"
-                        placeholder="e.g. 0.98"
-                    >
-
+                    <label>External Wall Thickness (ft)</label>
+                    <input type="number" id="externalWall" placeholder="e.g. 0.98">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Internal Partition Wall Length (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="internalWallLength"
-                        placeholder="Total length"
-                    >
-
+                    <label>Internal Partition Wall Length (ft)</label>
+                    <input type="number" id="internalWallLength" placeholder="Total length">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Internal Wall Thickness (ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="internalWall"
-                        placeholder="e.g. 0.66"
-                    >
-
+                    <label>Internal Wall Thickness (ft)</label>
+                    <input type="number" id="internalWall" placeholder="e.g. 0.66">
                 </div>
 
 
                 <div class="form-group">
-
-                    <label>
-                        Door + Window Area (sq ft)
-                    </label>
-
-                    <input
-                        type="number"
-                        id="openingArea"
-                        placeholder="Total opening area"
-                    >
-
+                    <label>Door + Window Area (sq ft)</label>
+                    <input type="number" id="openingArea" placeholder="Total opening area">
                 </div>
 
             </div>
@@ -317,20 +141,11 @@
 
             <div class="section-title">
 
-                <span>
-                    🧱
-                </span>
+                <span>🧱</span>
 
                 <div>
-
-                    <h2>
-                        Brickwork & Mortar
-                    </h2>
-
-                    <p>
-                        Wall construction details
-                    </p>
-
+                    <h2>Brickwork & Mortar</h2>
+                    <p>Wall construction details</p>
                 </div>
 
             </div>
@@ -338,12 +153,9 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Mortar Ratio
-                    </label>
+                    <label>Mortar Ratio</label>
 
                     <select id="mortarRatio">
 
@@ -366,15 +178,11 @@
 
                 <div class="form-group">
 
-                    <label>
-                        Plaster Height (ft)
-                    </label>
+                    <label>Plaster Height (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="plasterHeight"
-                        placeholder="e.g. 15.42"
-                    >
+                        placeholder="e.g. 15.42">
 
                 </div>
 
@@ -389,20 +197,11 @@
 
             <div class="section-title">
 
-                <span>
-                    🏛️
-                </span>
+                <span>🏛️</span>
 
                 <div>
-
-                    <h2>
-                        RCC / Structural Details
-                    </h2>
-
-                    <p>
-                        Slab, columns and beam information
-                    </p>
-
+                    <h2>RCC / Structural Details</h2>
+                    <p>Slab, columns and beam information</p>
                 </div>
 
             </div>
@@ -410,109 +209,80 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Slab Thickness (ft)
-                    </label>
+                    <label>Slab Thickness (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="slabThickness"
-                        placeholder="e.g. 0.39"
-                    >
+                        placeholder="e.g. 0.39">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Number of RCC Columns / Floor
-                    </label>
+                    <label>Number of RCC Columns / Floor</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="columns"
                         value="0"
-                        min="0"
-                    >
+                        min="0">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Column Length (ft)
-                    </label>
+                    <label>Column Length (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="columnLength"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Column Breadth (ft)
-                    </label>
+                    <label>Column Breadth (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="columnBreadth"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Beam Total Length / Floor (ft)
-                    </label>
+                    <label>Beam Total Length / Floor (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="beamLength"
-                        placeholder="e.g. 60.70"
-                    >
+                        placeholder="e.g. 60.70">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Beam Width (ft)
-                    </label>
+                    <label>Beam Width (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="beamWidth"
-                        placeholder="e.g. 0.98"
-                    >
+                        placeholder="e.g. 0.98">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Beam Depth (ft)
-                    </label>
+                    <label>Beam Depth (ft)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="beamDepth"
-                        placeholder="e.g. 1.64"
-                    >
+                        placeholder="e.g. 1.64">
 
                 </div>
 
@@ -527,20 +297,11 @@
 
             <div class="section-title">
 
-                <span>
-                    🏗️
-                </span>
+                <span>🏗️</span>
 
                 <div>
-
-                    <h2>
-                        Foundation Details
-                    </h2>
-
-                    <p>
-                        Select the foundation system
-                    </p>
-
+                    <h2>Foundation Details</h2>
+                    <p>Select the foundation system</p>
                 </div>
 
             </div>
@@ -550,14 +311,10 @@
 
                 <div class="form-group full">
 
-                    <label>
-                        Foundation Type
-                    </label>
+                    <label>Foundation Type</label>
 
-                    <select
-                        id="foundationType"
-                        onchange="showFoundationFields()"
-                    >
+                    <select id="foundationType"
+                        onchange="showFoundationFields()">
 
                         <option value="strip">
                             Continuous / Strip Footing
@@ -578,55 +335,39 @@
             <!-- STRIP FOOTING -->
             <div id="stripFields">
 
-                <h3>
-                    Continuous / Strip Footing
-                </h3>
-
+                <h3>Continuous / Strip Footing</h3>
 
                 <div class="form-grid">
 
-
                     <div class="form-group">
 
-                        <label>
-                            Total Strip Footing Run (ft)
-                        </label>
+                        <label>Total Strip Footing Run (ft)</label>
 
-                        <input
-                            type="number"
+                        <input type="number"
                             id="stripRun"
-                            placeholder="e.g. 155.50"
-                        >
+                            placeholder="e.g. 155.50">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Breadth (ft)
-                        </label>
+                        <label>Footing Breadth (ft)</label>
 
-                        <input
-                            type="number"
+                        <input type="number"
                             id="stripBreadth"
-                            placeholder="e.g. 2.95"
-                        >
+                            placeholder="e.g. 2.95">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Depth (ft)
-                        </label>
+                        <label>Footing Depth (ft)</label>
 
-                        <input
-                            type="number"
+                        <input type="number"
                             id="stripDepth"
-                            placeholder="e.g. 1.97"
-                        >
+                            placeholder="e.g. 1.97">
 
                     </div>
 
@@ -637,73 +378,51 @@
 
 
             <!-- ISOLATED FOOTING -->
-            <div
-                id="isolatedFields"
-                class="hidden"
-            >
+            <div id="isolatedFields"
+                class="hidden">
 
-                <h3>
-                    Isolated RCC Footings
-                </h3>
-
+                <h3>Isolated RCC Footings</h3>
 
                 <div class="form-grid">
 
-
                     <div class="form-group">
 
-                        <label>
-                            Number of Footings
-                        </label>
+                        <label>Number of Footings</label>
 
-                        <input
-                            type="number"
+                        <input type="number"
                             id="footingCount"
                             value="0"
-                            min="0"
-                        >
+                            min="0">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Length (ft)
-                        </label>
+                        <label>Footing Length (ft)</label>
 
-                        <input
-                            type="number"
-                            id="footingLength"
-                        >
+                        <input type="number"
+                            id="footingLength">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Breadth (ft)
-                        </label>
+                        <label>Footing Breadth (ft)</label>
 
-                        <input
-                            type="number"
-                            id="footingBreadth"
-                        >
+                        <input type="number"
+                            id="footingBreadth">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>
-                            Footing Depth (ft)
-                        </label>
+                        <label>Footing Depth (ft)</label>
 
-                        <input
-                            type="number"
-                            id="footingDepth"
-                        >
+                        <input type="number"
+                            id="footingDepth">
 
                     </div>
 
@@ -720,20 +439,11 @@
 
             <div class="section-title">
 
-                <span>
-                    🔩
-                </span>
+                <span>🔩</span>
 
                 <div>
-
-                    <h2>
-                        Steel Details
-                    </h2>
-
-                    <p>
-                        Reinforcement information
-                    </p>
-
+                    <h2>Steel Details</h2>
+                    <p>Reinforcement information</p>
                 </div>
 
             </div>
@@ -741,33 +451,24 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Steel Quantity (kg)
-                    </label>
+                    <label>Steel Quantity (kg)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="steelQuantity"
-                        placeholder="From structural design"
-                    >
+                        placeholder="From structural design">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        TMT Steel Rate (₹ / kg)
-                    </label>
+                    <label>TMT Steel Rate (₹ / kg)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="steelRate"
-                        value="65"
-                    >
+                        value="65">
 
                 </div>
 
@@ -790,20 +491,11 @@
 
             <div class="section-title">
 
-                <span>
-                    👷
-                </span>
+                <span>👷</span>
 
                 <div>
-
-                    <h2>
-                        Labour & Site Details
-                    </h2>
-
-                    <p>
-                        Manpower and construction duration
-                    </p>
-
+                    <h2>Labour & Site Details</h2>
+                    <p>Manpower and construction duration</p>
                 </div>
 
             </div>
@@ -811,168 +503,123 @@
 
             <div class="form-grid">
 
-
                 <div class="form-group">
 
-                    <label>
-                        Construction Days
-                    </label>
+                    <label>Construction Days</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="constructionDays"
-                        placeholder="e.g. 100"
-                    >
+                        placeholder="e.g. 100">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Masons
-                    </label>
+                    <label>Number of Masons</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="masons"
-                        placeholder="e.g. 5"
-                    >
+                        placeholder="e.g. 5">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Mazdoors
-                    </label>
+                    <label>Number of Mazdoors</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="mazdoors"
-                        placeholder="e.g. 9"
-                    >
+                        placeholder="e.g. 9">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Electrician Work-Days
-                    </label>
+                    <label>Electrician Work-Days</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="electricianDays"
-                        placeholder="e.g. 18"
-                    >
+                        placeholder="e.g. 18">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Plumber Work-Days
-                    </label>
+                    <label>Plumber Work-Days</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="plumberDays"
-                        placeholder="e.g. 14"
-                    >
+                        placeholder="e.g. 14">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Number of Carpenters
-                    </label>
+                    <label>Number of Carpenters</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="carpenters"
-                        placeholder="e.g. 2"
-                    >
+                        placeholder="e.g. 2">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Carpenter Working Days
-                    </label>
+                    <label>Carpenter Working Days</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="carpenterDays"
-                        placeholder="e.g. 30"
-                    >
+                        placeholder="e.g. 30">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Security Personnel
-                    </label>
+                    <label>Security Personnel</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="security"
-                        placeholder="e.g. 1"
-                    >
+                        placeholder="e.g. 1">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Security Working Days
-                    </label>
+                    <label>Security Working Days</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="securityDays"
-                        placeholder="e.g. 120"
-                    >
+                        placeholder="e.g. 120">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Security Rate (₹ / day)
-                    </label>
+                    <label>Security Rate (₹ / day)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="securityRate"
-                        placeholder="Enter rate"
-                    >
+                        placeholder="Enter rate">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>
-                        Water Charges (%)
-                    </label>
+                    <label>Water Charges (%)</label>
 
-                    <input
-                        type="number"
+                    <input type="number"
                         id="waterCharges"
-                        value="1"
-                    >
+                        value="1">
 
                 </div>
 
@@ -985,19 +632,19 @@
         <!-- ACTION BUTTONS -->
         <section class="action-area">
 
-            <button
-                class="calculate-btn"
-                onclick="calculateEstimate()"
-            >
+            <button class="calculate-btn"
+                onclick="calculateEstimate()">
+
                 📊 Calculate Estimate
+
             </button>
 
 
-            <button
-                class="reset-btn"
-                onclick="resetForm()"
-            >
+            <button class="reset-btn"
+                onclick="resetForm()">
+
                 Reset
+
             </button>
 
         </section>
@@ -1005,22 +652,16 @@
 
 
         <!-- RESULT -->
-        <section
-            id="resultSection"
-            class="card result-section hidden"
-        >
+        <section id="resultSection"
+            class="card result-section hidden">
 
             <div class="section-title">
 
-                <span>
-                    💰
-                </span>
+                <span>💰</span>
 
                 <div>
 
-                    <h2>
-                        Estimation Result
-                    </h2>
+                    <h2>Estimation Result</h2>
 
                     <p>
                         Estimated project cost summary
@@ -1031,8 +672,8 @@
             </div>
 
 
-            <div class="result-grid">
 
+            <div class="result-grid">
 
                 <div class="result-box">
 
@@ -1063,7 +704,6 @@
 
 
 
-            <!-- COST SUMMARY -->
             <div class="cost-summary">
 
                 <h3>
@@ -1191,72 +831,22 @@
 
 
 
-            <!-- REPORT BUTTONS -->
             <div class="report-buttons">
 
                 <button onclick="generateReport()">
+
                     📄 Generate Report
+
                 </button>
 
 
                 <button onclick="window.print()">
+
                     🖨️ Print / Save PDF
+
                 </button>
 
             </div>
-
-        </section>
-
-
-
-        <!-- SEO INFORMATION -->
-        <section class="card">
-
-            <div class="section-title">
-
-                <span>
-                    📐
-                </span>
-
-                <div>
-
-                    <h2>
-                        About Smart Construction Estimation System
-                    </h2>
-
-                    <p>
-                        Civil Engineering Construction Estimation Tool
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <p>
-                Smart Construction Estimation System is a Civil
-                Engineering project developed by
-                <strong>Saksham Tiwari</strong>.
-                The system helps users prepare an approximate
-                construction cost estimate using building dimensions,
-                foundation details, RCC information, brickwork,
-                plaster, steel and labour inputs.
-            </p>
-
-
-            <p>
-                The estimator is designed to provide a structured
-                construction cost summary for educational and
-                preliminary estimation purposes.
-            </p>
-
-
-            <p>
-                Construction estimates should be verified with
-                applicable PWD/SOR rates, site conditions,
-                material market rates and structural design before
-                actual construction.
-            </p>
 
         </section>
 
@@ -1267,9 +857,7 @@
 
             <p>
 
-                <strong>
-                    Note:
-                </strong>
+                <strong>Note:</strong>
 
                 This is an estimated construction cost based on
                 entered dimensions and applicable PWD/SOR rates.
@@ -1299,17 +887,15 @@
         </p>
 
         <p>
-            Developed as a Civil Engineering Project by
-            Saksham Tiwari
+            Civil Engineering Project
         </p>
 
     </footer>
 
 
 
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
-
 </body>
+
 </html>
